@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "lower_limb_kinematics: 2 messages, 0 services")
+message(STATUS "lower_limb_kinematics: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ilower_limb_kinematics:/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg;-Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg")
 
@@ -16,14 +16,19 @@ add_custom_target(lower_limb_kinematics_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+add_custom_target(_lower_limb_kinematics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lower_limb_kinematics" "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" ""
+)
+
 get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" NAME_WE)
 add_custom_target(_lower_limb_kinematics_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lower_limb_kinematics" "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" ""
 )
 
-get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" NAME_WE)
 add_custom_target(_lower_limb_kinematics_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lower_limb_kinematics" "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "lower_limb_kinematics" "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" ""
 )
 
 #
@@ -32,6 +37,12 @@ add_custom_target(_lower_limb_kinematics_generate_messages_check_deps_${_filenam
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(lower_limb_kinematics
+  "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/lower_limb_kinematics
+)
 _generate_msg_cpp(lower_limb_kinematics
   "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
   "${MSG_I_FLAGS}"
@@ -59,9 +70,11 @@ add_custom_target(lower_limb_kinematics_generate_messages_cpp
 add_dependencies(lower_limb_kinematics_generate_messages lower_limb_kinematics_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+add_dependencies(lower_limb_kinematics_generate_messages_cpp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_cpp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_cpp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -73,6 +86,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lower_limb_kinematics_generate_mess
 
 ### Section generating for lang: geneus
 ### Generating Messages
+_generate_msg_eus(lower_limb_kinematics
+  "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/lower_limb_kinematics
+)
 _generate_msg_eus(lower_limb_kinematics
   "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
   "${MSG_I_FLAGS}"
@@ -100,9 +119,11 @@ add_custom_target(lower_limb_kinematics_generate_messages_eus
 add_dependencies(lower_limb_kinematics_generate_messages lower_limb_kinematics_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+add_dependencies(lower_limb_kinematics_generate_messages_eus _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_eus _lower_limb_kinematics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_eus _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -114,6 +135,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lower_limb_kinematics_generate_mess
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(lower_limb_kinematics
+  "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/lower_limb_kinematics
+)
 _generate_msg_lisp(lower_limb_kinematics
   "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
   "${MSG_I_FLAGS}"
@@ -141,9 +168,11 @@ add_custom_target(lower_limb_kinematics_generate_messages_lisp
 add_dependencies(lower_limb_kinematics_generate_messages lower_limb_kinematics_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+add_dependencies(lower_limb_kinematics_generate_messages_lisp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_lisp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_lisp _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -155,6 +184,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS lower_limb_kinematics_generate_mess
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(lower_limb_kinematics
+  "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/lower_limb_kinematics
+)
 _generate_msg_py(lower_limb_kinematics
   "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
   "${MSG_I_FLAGS}"
@@ -182,9 +217,11 @@ add_custom_target(lower_limb_kinematics_generate_messages_py
 add_dependencies(lower_limb_kinematics_generate_messages lower_limb_kinematics_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+add_dependencies(lower_limb_kinematics_generate_messages_py _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_py _lower_limb_kinematics_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg" NAME_WE)
+get_filename_component(_filename "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg" NAME_WE)
 add_dependencies(lower_limb_kinematics_generate_messages_py _lower_limb_kinematics_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -397,6 +397,19 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named _lower_limb_kinematics_generate_messages_check_deps_foot_rp
+
+# Build rule for target.
+_lower_limb_kinematics_generate_messages_check_deps_foot_rp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _lower_limb_kinematics_generate_messages_check_deps_foot_rp
+.PHONY : _lower_limb_kinematics_generate_messages_check_deps_foot_rp
+
+# fast build rule for target.
+_lower_limb_kinematics_generate_messages_check_deps_foot_rp/fast:
+	$(MAKE) -f lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/build.make lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/build
+.PHONY : _lower_limb_kinematics_generate_messages_check_deps_foot_rp/fast
+
+#=============================================================================
 # Target rules for targets named _lower_limb_kinematics_generate_messages_check_deps_imu_sample
 
 # Build rule for target.
@@ -792,6 +805,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... _lower_limb_kinematics_generate_messages_check_deps_foot_rp"
 	@echo "... _lower_limb_kinematics_generate_messages_check_deps_imu_sample"
 	@echo "... _lower_limb_kinematics_generate_messages_check_deps_quaternion_sample"
 	@echo "... actionlib_generate_messages_cpp"

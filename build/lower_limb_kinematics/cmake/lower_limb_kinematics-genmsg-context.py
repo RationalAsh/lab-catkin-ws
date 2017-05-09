@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg;/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
+messages_str = "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg;/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg;/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
 services_str = ""
 pkg_name = "lower_limb_kinematics"
 dependencies_str = "std_msgs"

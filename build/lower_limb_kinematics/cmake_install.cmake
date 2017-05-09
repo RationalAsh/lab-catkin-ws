@@ -36,6 +36,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/lower_limb_kinematics/msg" TYPE FILE FILES
     "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/imu_sample.msg"
     "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/quaternion_sample.msg"
+    "/home/ashwin/catkin_ws/src/lower_limb_kinematics/msg/foot_rp.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

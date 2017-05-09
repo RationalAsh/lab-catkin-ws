@@ -55,6 +55,7 @@ add_message_files(
    FILES
    imu_sample.msg
    quaternion_sample.msg
+   foot_rp.msg
 #   Message1.msg
 #   Message2.msg
 )

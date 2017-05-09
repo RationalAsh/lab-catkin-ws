@@ -4,6 +4,8 @@
 (defsystem "lower_limb_kinematics-msg"
   :depends-on (:roslisp-msg-protocol :roslisp-utils )
   :components ((:file "_package")
+    (:file "foot_rp" :depends-on ("_package_foot_rp"))
+    (:file "_package_foot_rp" :depends-on ("_package"))
     (:file "quaternion_sample" :depends-on ("_package_quaternion_sample"))
     (:file "_package_quaternion_sample" :depends-on ("_package"))
     (:file "imu_sample" :depends-on ("_package_imu_sample"))
