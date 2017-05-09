@@ -1,0 +1,8 @@
+prefix=/home/ashwin/catkin_ws/devel
+
+Name: lower_limb_kinematics
+Description: Description of lower_limb_kinematics
+Version: 0.0.0
+Cflags: -I/home/ashwin/catkin_ws/devel/include
+Libs: -L/home/ashwin/catkin_ws/devel/lib 
+Requires: message_runtime

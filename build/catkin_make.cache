@@ -1,0 +1,2 @@
+beginner_tutorials:lower_limb_kinematics
+-DCATKIN_DEVEL_PREFIX=/home/ashwin/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ashwin/catkin_ws/install -G Unix Makefiles

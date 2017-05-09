@@ -1,0 +1,8 @@
+prefix=/home/ashwin/catkin_ws/devel
+
+Name: human_leg_tracking
+Description: Description of human_leg_tracking
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ashwin/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,5 @@
+#include "ros/ros.h"
+#include "lower_limb_kinematics/imu_sample.h"
+
+void imu_sample_callback(const lower_limb_kinematics::imu_sample& imu1_data)
+{
