@@ -709,6 +709,19 @@ lower_limb_kinematics_genpy/fast:
 .PHONY : lower_limb_kinematics_genpy/fast
 
 #=============================================================================
+# Target rules for targets named seel_gait_phase_detection
+
+# Build rule for target.
+seel_gait_phase_detection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 seel_gait_phase_detection
+.PHONY : seel_gait_phase_detection
+
+# fast build rule for target.
+seel_gait_phase_detection/fast:
+	$(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build
+.PHONY : seel_gait_phase_detection/fast
+
+#=============================================================================
 # Target rules for targets named single_imu_kalman_filter
 
 # Build rule for target.
@@ -829,6 +842,7 @@ help:
 	@echo "... lower_limb_kinematics_geneus"
 	@echo "... lower_limb_kinematics_genlisp"
 	@echo "... lower_limb_kinematics_genpy"
+	@echo "... seel_gait_phase_detection"
 	@echo "... single_imu_kalman_filter"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"

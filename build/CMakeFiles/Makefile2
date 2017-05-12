@@ -688,6 +688,7 @@ clean: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # Convenience name for "all" pass in the directory.
 lower_limb_kinematics/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all
+lower_limb_kinematics/all: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/all
 lower_limb_kinematics/all: lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/all
 .PHONY : lower_limb_kinematics/all
 
@@ -716,6 +717,7 @@ lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinemat
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_geneus.dir/clean
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_genlisp.dir/clean
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_genpy.dir/clean
+lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/clean
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/clean
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/clean
 lower_limb_kinematics/clean: lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_eus.dir/clean
@@ -1228,9 +1230,9 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_gencpp.dir/clean
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles 
@@ -1266,9 +1268,9 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages.
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_quaternion_sample.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  3 4 5
@@ -1300,9 +1302,9 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_quaternion_sample.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_eus.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  6 7 8 9
@@ -1334,9 +1336,9 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_quaternion_sample.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  10 11 12
@@ -1368,9 +1370,9 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_quaternion_sample.dir/all
+lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/all
 lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_foot_rp.dir/all
-lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/all: lower_limb_kinematics/CMakeFiles/_lower_limb_kinematics_generate_messages_check_deps_imu_sample.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/build.make lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  13 14 15 16
@@ -1491,13 +1493,48 @@ clean: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir
+
+# All Build rule for target.
+lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all
+	$(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/depend
+	$(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  17
+	@echo "Built target seel_gait_phase_detection"
+.PHONY : lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/all
+
+# Include target in all.
+all: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ashwin/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ashwin/catkin_ws/build/CMakeFiles 0
+.PHONY : lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule
+
+# Convenience name for target.
+seel_gait_phase_detection: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule
+.PHONY : seel_gait_phase_detection
+
+# clean rule for target.
+lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/clean:
+	$(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/clean
+.PHONY : lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/clean
+
+# clean rule for target.
+clean: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir
 
 # All Build rule for target.
 lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/all: lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_generate_messages_cpp.dir/all
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/build.make lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/depend
 	$(MAKE) -f lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/build.make lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ashwin/catkin_ws/build/CMakeFiles  18
 	@echo "Built target single_imu_kalman_filter"
 .PHONY : lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/all
 

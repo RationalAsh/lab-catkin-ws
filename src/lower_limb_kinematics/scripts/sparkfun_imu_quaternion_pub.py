@@ -139,6 +139,7 @@ def imu_data_publisher():
             t.transform.rotation.z = vals[3]
             euler = tf.transformations.euler_from_quaternion(vals[1:] + (vals[0],))
             foot_rp_data.roll = euler[0]
+
             foot_rp_data.pitch = euler[1]
             pub.publish(imu1_data)
             pub2.publish(foot_rp_data)

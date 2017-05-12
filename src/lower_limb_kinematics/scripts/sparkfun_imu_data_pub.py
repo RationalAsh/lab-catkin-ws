@@ -13,7 +13,7 @@ CMD_WAIT = b'W\n'
 CMD_RAW = b'R\n'
 CMD_NODEBUG = b'DBGOFF\n'
 TEST_IMU = 7
-SAMPLE_RATE = 100
+SAMPLE_RATE = 120
 
 #List of IP Addresses for the IMUs
 IMU_IPS = ['192.168.1.100',

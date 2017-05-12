@@ -486,6 +486,20 @@ lower_limb_kinematics_genpy/fast:
 .PHONY : lower_limb_kinematics_genpy/fast
 
 # Convenience name for target.
+lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule:
+	cd /home/ashwin/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule
+.PHONY : lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule
+
+# Convenience name for target.
+seel_gait_phase_detection: lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/rule
+.PHONY : seel_gait_phase_detection
+
+# fast build rule for target.
+seel_gait_phase_detection/fast:
+	cd /home/ashwin/catkin_ws/build && $(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build
+.PHONY : seel_gait_phase_detection/fast
+
+# Convenience name for target.
 lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/rule:
 	cd /home/ashwin/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/rule
 .PHONY : lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/rule
@@ -555,6 +569,30 @@ tf2_msgs_generate_messages_py/fast:
 	cd /home/ashwin/catkin_ws/build && $(MAKE) -f lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
+src/seel_gait_phase_detection.o: src/seel_gait_phase_detection.cpp.o
+.PHONY : src/seel_gait_phase_detection.o
+
+# target to build an object file
+src/seel_gait_phase_detection.cpp.o:
+	cd /home/ashwin/catkin_ws/build && $(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/src/seel_gait_phase_detection.cpp.o
+.PHONY : src/seel_gait_phase_detection.cpp.o
+
+src/seel_gait_phase_detection.i: src/seel_gait_phase_detection.cpp.i
+.PHONY : src/seel_gait_phase_detection.i
+
+# target to preprocess a source file
+src/seel_gait_phase_detection.cpp.i:
+	cd /home/ashwin/catkin_ws/build && $(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/src/seel_gait_phase_detection.cpp.i
+.PHONY : src/seel_gait_phase_detection.cpp.i
+
+src/seel_gait_phase_detection.s: src/seel_gait_phase_detection.cpp.s
+.PHONY : src/seel_gait_phase_detection.s
+
+# target to generate assembly for a file
+src/seel_gait_phase_detection.cpp.s:
+	cd /home/ashwin/catkin_ws/build && $(MAKE) -f lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/build.make lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/src/seel_gait_phase_detection.cpp.s
+.PHONY : src/seel_gait_phase_detection.cpp.s
+
 src/single_imu_kalman_filter.o: src/single_imu_kalman_filter.cpp.o
 .PHONY : src/single_imu_kalman_filter.o
 
@@ -615,12 +653,16 @@ help:
 	@echo "... lower_limb_kinematics_genlisp"
 	@echo "... lower_limb_kinematics_genpy"
 	@echo "... rebuild_cache"
+	@echo "... seel_gait_phase_detection"
 	@echo "... single_imu_kalman_filter"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... src/seel_gait_phase_detection.o"
+	@echo "... src/seel_gait_phase_detection.i"
+	@echo "... src/seel_gait_phase_detection.s"
 	@echo "... src/single_imu_kalman_filter.o"
 	@echo "... src/single_imu_kalman_filter.i"
 	@echo "... src/single_imu_kalman_filter.s"

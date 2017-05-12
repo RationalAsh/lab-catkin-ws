@@ -251,6 +251,7 @@ SET(CMAKE_DEPEND_INFO_FILES
   "lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_geneus.dir/DependInfo.cmake"
   "lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_genlisp.dir/DependInfo.cmake"
   "lower_limb_kinematics/CMakeFiles/lower_limb_kinematics_genpy.dir/DependInfo.cmake"
+  "lower_limb_kinematics/CMakeFiles/seel_gait_phase_detection.dir/DependInfo.cmake"
   "lower_limb_kinematics/CMakeFiles/single_imu_kalman_filter.dir/DependInfo.cmake"
   "lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "lower_limb_kinematics/CMakeFiles/tf2_msgs_generate_messages_eus.dir/DependInfo.cmake"

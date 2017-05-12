@@ -137,15 +137,19 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(single_imu_kalman_filter src/single_imu_kalman_filter.cpp)
+add_executable(seel_gait_phase_detection src/seel_gait_phase_detection.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(single_imu_kalman_filter ${catkin_LIBRARIES})
 target_link_libraries(single_imu_kalman_filter ${gsl_LIBRARIES})
+target_link_libraries(seel_gait_phase_detection ${catkin_LIBRARIES})
+target_link_libraries(seel_gait_phase_detection ${gsl_LIBRARIES})
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 add_dependencies(single_imu_kalman_filter lower_limb_kinematics_generate_messages_cpp)
+add_dependencies(seel_gait_phase_detection lower_limb_kinematics_generate_messages_cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
